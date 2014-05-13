@@ -5,10 +5,25 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.3.2"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload", "~> 3.2"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+# Adds Blog features
+gem "middleman-blog", "~> 3.5"
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
+
+# For article summaries
+gem "nokogiri"
+
+# Susy styles
+gem "susy", "~> 1.0.9"
+
+# Automate deploys
+gem "middleman-deploy"
